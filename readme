@@ -1,0 +1,26 @@
+Fine-Tuning FinBERT for Financial Text Classification
+
+FinBERT is a domain-specific language model that has been pre-trained on financial text data.
+Which means it understands the words like profit , revenue , pe ratio etc 
+
+Project Overview
+I fine-tuned the FinBERT model to classify financial  news headlines 
+into three categories:
+Macro (label = 0): Government policies, inflation, GDP, RBI, trade, etc.
+Stock (label = 1): Company-specific news like profits, expansions, deals.
+Market (label = 2): General market trends, indices, volatility, global cues.
+
+Why Only Three Classifications
+FinBERT Original Training: 3-class sentiment classification (negative, neutral, positive)
+Minimal Viable Classification: Covers major financial news types
+Accuracy vs Complexity Trade-off: More categories = lower accuracy + more training data needed
+
+Bloomberg Terminal: ~200 News Categories
+Reuters News Codes: ~1,500 Categories
+Our Approach: 3 focused categories for better accuracy
+
+
+Tools & Frameworks
+Transformers (Hugging Face) 
+Datasets 
+PyTorch

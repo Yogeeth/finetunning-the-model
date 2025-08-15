@@ -6,7 +6,7 @@ FireBERT is a **domain-specific financial text classifier** built by fine-tuning
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 FinBERT is originally trained for **sentiment classification** (negative, neutral, positive) using financial corpora — meaning it already understands industry-specific terms like *profit*, *revenue*, *P/E ratio*, etc.
 
 We fine-tuned it for **topic classification** in financial news headlines:
@@ -19,7 +19,7 @@ We fine-tuned it for **topic classification** in financial news headlines:
 
 ---
 
-## 🎯 Why Only Three Categories?
+## Why Only Three Categories?
 - **FinBERT Original Task** → 3-class sentiment classification  
 - **Minimal Viable Classification** → Covers majority of impactful financial news  
 - **Accuracy vs Complexity Trade-off** → More categories require more data & reduce accuracy  
@@ -30,7 +30,7 @@ We fine-tuned it for **topic classification** in financial news headlines:
 
 ---
 
-## 🚀 Quick Usage
+## Quick Usage
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification

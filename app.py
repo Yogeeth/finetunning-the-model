@@ -1,4 +1,5 @@
 # Import libraries
+#pip install transformers datasets torch scikit-learn
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer
 from datasets import Dataset, DatasetDict
 from sklearn.metrics import accuracy_score, f1_score
@@ -415,3 +416,4 @@ for a in range(len(lab)):
 
 print(f"Fine-tuned Model Accuracy: {finetuned_correct}/{len(lab)} = {finetuned_correct/len(lab):.2%}")
 print(f"Improvement: {finetuned_correct - without_correct} more correct predictions")
+
